@@ -37,12 +37,6 @@ jobs:
         env:
           CI: true
 
-      - name: build ng-basis
-        run: |
-          yarn build --prod ng-basis
-        env:
-          CI: true
-
       - name: deploy ng-basis
         run: |
           yarn ng deploy --base-href=/try-github-actions/
